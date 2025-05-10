@@ -2,7 +2,27 @@
 
 A full-stack web application for personality testing with user authentication and result storage.
 
+### Landing Page
+
 ![Landing Page](landing_page.png)
+
+### Login Page
+
+![Login Page](login_page.png)
+
+### Test Page
+
+![Test Page](Test1.png)
+![Test Page](Test2.png)
+
+### Dashboard Page
+
+![Dashboard Page](Dashboard.png)
+
+### Test Result Page
+
+![Test Result Page](Test_result1.png)
+![Test Result Page](Test_result2.png)
 
 ## Features
 

@@ -2,6 +2,8 @@
 
 A full-stack web application for personality testing with user authentication and result storage.
 
+![Landing Page](landing_page.png)
+
 ## Features
 
 - User authentication (register, login, logout)

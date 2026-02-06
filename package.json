@@ -5,7 +5,7 @@
     "start": "node backend/server.js",
     "build": "npm run build:frontend && npm run build:server",
     "build:frontend": "vite build --outDir dist/frontend --ssrManifest",
-    "build:server": "vite build --outDir dist/server --ssr /index.js",
+    "build:server": "vite build --outDir dist/server --ssr /entry-client.jsx",
     "devinstall": "zx ../../devinstall.mjs -- node server.js --dev",
     "lint": "eslint . --ext .js,.jsx --fix"
   },

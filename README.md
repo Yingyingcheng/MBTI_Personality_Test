@@ -24,7 +24,7 @@ A full-stack web application for personality testing with user authentication an
 ![Test Result Page](Test_result1.png)
 ![Test Result Page](Test_result2.png)
 
-### 🚀 Deployment & Troubleshooting
+## 🚀 Deployment & Troubleshooting
 
 This project is optimized for deployment on Vercel. During development, we resolved two critical architectural challenges:
 

@@ -3,9 +3,9 @@
   "scripts": {
     "dev": "node backend/server.js --dev",
     "start": "node backend/server.js",
-    "build": "npm run build:frontend && npm run build:server",
-    "build:frontend": "vite build frontend --outDir dist",
-    "build:server": "vite build frontend --outDir dist/server --ssr entry-client.jsx --emptyOutDir false",
+    "build": "npm run build:frontend && npm run build:server && ls -F ./dist",
+    "build:frontend": "vite build frontend --outDir ./dist",
+    "build:server": "vite build frontend --outDir ./dist/server --ssr entry-client.jsx --emptyOutDir false",
     "lint": "eslint . --ext .js,.jsx --fix"
   },
   "dependencies": {

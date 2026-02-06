@@ -7,5 +7,5 @@ import "./base.css";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
+  </BrowserRouter>
 );

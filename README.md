@@ -24,6 +24,20 @@ A full-stack web application for personality testing with user authentication an
 ![Test Result Page](Test_result1.png)
 ![Test Result Page](Test_result2.png)
 
+### 🚀 Deployment & Troubleshooting
+
+This project is optimized for deployment on Vercel. During development, we resolved two critical architectural challenges:
+
+1. Subdirectory Build Path
+   Because the source code is located in the /frontend directory, Vite's default build behavior would place files in frontend/dist. However, Vercel expects build artifacts at the project root.
+
+Fix: The build script was updated to use --outDir ../dist, which "pushes" the production files from the subdirectory to the root level for Vercel to detect.
+
+2. Single Page Application (SPA) Routing
+   A common issue in SPAs is the "Refresh 404 Error". While React handles navigation internally, refreshing the browser on a sub-page (like /dashboard) causes the browser to request a file that doesn't exist on the server.
+
+Solution: We implemented a vercel.json file with a Catch-all Rewrite. This instructs the server to redirect all requests to index.html, allowing react-router-dom to maintain control of the routing.
+
 ## Features
 
 - User authentication (register, login, logout)
